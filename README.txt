@@ -8,6 +8,11 @@ $ python setup.py linux pygame
 $ ./build/tinypy examples/julia.py
 $ ./build/tinypy your-program-goes-here.py
 
+Or do this:
+
+$ python2 setup tinypy
+$ ./build/tinypy hi.py
+
 Depends on:
 - python (only for bootstrapping)
 - sdl (for the pygame module)
