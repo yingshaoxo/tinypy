@@ -267,7 +267,8 @@ def build_gcc():
     do_chdir(os.path.join(TOPDIR,'tinypy'))
     nopos = ' -nopos '
     if DEBUG: nopos = ''
-    do_cmd("mkdir ../build")
+    if not os.path.exists("../build"):
+        do_cmd("mkdir ../build")
     if TEST:
         mods.append('tests')
         mods.append('asm')
